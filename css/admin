@@ -1,0 +1,174 @@
+
+
+
+/*css for admin_login.php */
+.login_form{
+	border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 4px 0  #87CEEB;
+    padding: 10px;
+    border: 1px solid #A7C4EA;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.login_form_title{
+	font-family: Courier;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+/* css for admin_index.php */
+
+.create_event_button {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.admin_event_list_content{
+	margin-top: 20px;
+	width: 525px;
+}
+
+.admin_event_list{
+	list-style-type: none;
+	margin: 0;
+	font-size: 12px;
+	font-family: Arial;
+	width: 100%;
+}
+
+.admin_event_list > li{
+	clear: both;
+}
+
+li.admin_list_header div{
+	background-color: #ccc;
+	font-weight: bold;
+	text-align: center;
+}
+
+.admin_event_list > li.admin_list_header div{
+	display: block;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 5px 5px ;
+	margin: 1px auto;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	
+}
+
+.admin_event_list > li.list_content div{
+	display: block;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 15px 5px 10px;
+	margin: 8px auto;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	height: 30px;
+	border-radius: 5px;
+}
+/*
+.admin_event_list > li.list_content div.event_crud{
+	height: 10px;
+	border-radius: 0px;
+	text-align: center;
+}
+*/
+.admin_event_list a{
+	color: blue;
+}
+
+.admin_list_header > div { text-transform: uppercase;}
+.admin_list_header > .admin_event_name { font-size: 11px;}
+.list_content > .admin_event_name { color:black; font-weight:bold; text-transform: uppercase; font-size: 11px;}
+.admin_event_list li div.admin_event_name{width: 75px; border-left: 1px solid #ccc;}
+.admin_event_list li div.admin_event_date{width: 60px;}
+.admin_event_list li div.admin_event_time{width: 60px;}
+.admin_event_list li div.admin_event_location{width: 60px;}
+.admin_event_list li div.admin_event_status{width: 45px;}
+.admin_event_list > li >div {font-size: 11px;}
+
+.event_crud{
+	font-size: 10px;
+}
+.list_content > a > .event_crud:hover{
+	text-transform: uppercase;
+	font-size: 8px;
+	color: #00008B;
+	background-color: #ccc;
+}
+
+
+/* css for create_event.php */
+#admin_create_event{
+	text-align: left;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#admin_create_event > fieldset{
+	border: 0;
+}
+
+.submit_create_event{
+	text-align: center;
+}
+
+#admin_create_event label{
+	clear: left;
+    float: left;
+    padding: 3px 10px 2px;
+    text-align: right;
+    width: 180px;
+}
+
+#admin_create_event input[type="text"], textarea{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0 0 8px;
+    width: 250px;
+}
+
+
+/* CSS for view_event_details.php */
+.save_view_details{
+	text-align: center;
+}
+
+.admin_view_event_details, .admin_view_member_details, .admin_view_leader_details {
+	border: 0;
+	box-shadow: 2px 2px 10px 0;
+	border-radius: 5px;
+	margin: 5px auto;
+	margin-bottom: 50px;
+}
+.admin_view_event_details legend, .admin_view_member_details legend, .admin_view_leader_details legend{
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#admin_view_event_table th, #admin_view_member_table th, #admin_view_leader_table th{
+	background-color: #ccc;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 5px;	
+}
+
+#admin_view_event_table td, #admin_view_member_table td, #admin_view_leader_table td{
+	font-size: 12px;
+	border-bottom: 1px solid black;
+}
+.empty_table{
+	color: blue;
+}
