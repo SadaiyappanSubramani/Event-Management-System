@@ -1,0 +1,323 @@
+/* css for the event list on index.php */
+.middle_column > h2{
+	text-align: center;
+}
+
+.event_list {
+	width: 600px;
+}
+
+.event_list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Arial;
+}
+			
+.event_list > li{
+	clear:both;
+}
+			
+li.event_list_header div{
+	display: block;
+	float: left;
+	background-color: #ccc;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13px;
+	vertical-align: bottom;
+	height: 20px;
+	padding: 5px 5px;
+}
+
+li.event_list_content > div{
+	display: block;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 5px 5px;
+	text-align: center;
+	height: 50px;
+}
+
+.event_list_header > div.event_name{width: 90px; border-left: 1px solid #ccc; border-top-left-radius:5px;}
+.event_list_header > div.event_date{width: 90px;}
+.event_list_header > div.event_type{width: 90px;}
+.event_list_header > div.event_location{width: 120px;}
+.event_list_header > div.event_status{width: 75px;}
+.event_list_header > div.event_fees{width: 50px; border-top-right-radius:5px;}
+
+.event_list_content > div.event_name{width: 90px; border-left: 1px solid #ccc; border-bottom-left-radius:5px;}
+.event_list_content > div.event_date{width: 90px;}
+.event_list_content > div.event_type{width: 90px;}
+.event_list_content > div.event_location{width: 120px;}
+.event_list_content > div.event_status{width: 70px;}
+.event_list_content > div.event_fees{width: 50px; border-bottom-right-radius:5px;}
+
+.event_name a { color: blue; font-weight: bold;}
+.event_name a:hover {color: #A52A2A;}
+
+
+/*css for about_us.php */
+.about_us_content{
+	border: 1px solid blue;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 0;
+	padding: 5px;
+	text-align: justify;
+	font-size: 12px;
+}
+.about_us_content > img{
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+/* css for individual_event_registration.php, middle column only*/
+.event_registration_form{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+.register_event_name{
+	text-transform: uppercase;
+	color: blue;
+	font-weight: bold;
+}
+
+#event_registration_form{
+	margin-top: 5px;
+	box-shadow: 2px 2px 5px 0 #ccc;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#event_registration_form >fieldset{
+	border: 0;
+	box-shadow: 2px 2px 14px 0;
+	border-radius: 5px;
+}
+
+.note{
+	font-size: 11px;
+	font-family: courier;
+	font-weight: bold;
+}
+
+#event_registration_form .question_label{
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 2px;
+	margin: 4px auto;
+	
+}
+
+.submit_registration_button{
+	text-align: center;
+}
+
+.submit_registration_button > input[type="submit"]{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+#event_registration_form label, #event_registration_form span{
+	clear: left;
+    float: left;
+    padding: 3px 10px 2px;
+    text-align: right;
+    width: 180px;
+}
+
+#event_registration_form input[type="text"], textarea{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0 0 8px;
+    width: 250px;
+}
+
+
+#event_registration_form input[type="checkbox"]{
+	clear: left;
+    float: left;
+    padding: 2px 5px 2px;
+    text-align: right;
+    width: 100px;
+}
+
+.details_table > table{
+	margin: 0 auto;
+}
+#registration_for_event_table th, td{
+	width: 100px;
+	text-align: center;
+	padding: 2px;
+}
+
+#registration_for_event_table th{
+	background-color: #ccc;
+	font-weight: bold;
+}
+
+#registration_for_event_table  td{
+	color: blue;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+/* CSS for group_event_registration.php */
+#group_event_registration_form label, #group_event_registration_form span{
+	clear: left;
+    float: left;
+    padding: 3px 10px 2px;
+    text-align: right;
+    width: 180px;
+}
+
+
+#group_event_registration_form input[type="text"]{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0 0 8px;
+    width: 250px;
+}
+
+
+
+/* Css for event_details.php */
+
+.event_details{
+	border: 1px solid black;
+	margin: 0 auto;
+	box-shadow: 2px 2px 5px 0;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.event_details > tbody> tr> td{
+	padding: 5px;
+	
+}
+
+.event_details td:first-child{
+	text-align: right;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.event_details td:last-child{
+	text-align: left;
+	font-size: 16px;
+	font-family: arial;
+	border-bottom: 1px solid black;	
+}
+
+
+.event_details button{
+	font-weight: bold;
+	padding: 5px;
+}
+
+.event_details a{
+	color: blue;
+}
+
+
+
+/* css for save_event_registration.php */
+
+.confirmation_result{
+	border: 1px solid blue;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 2px 2px 5px 0;
+}
+
+.confirmation_result> button{
+	font-weight: bold;
+	padding: 5px;
+}
+
+/* css for view_registered_events.php */
+.view_event{
+	border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 4px 0  #87CEEB;
+    padding: 10px;
+    border: 1px solid #A7C4EA;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.view_event > fieldset{
+	border: 0;
+}
+
+.view_event label{
+	
+	color: blue;
+}
+
+.view_event legend{
+	font-family: Courier;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center
+}
+
+
+.submit_view_events{
+	text-align: center;
+}
+
+.view_event label{
+	clear: left;
+    float: left;
+    padding: 3px 10px 2px;
+    text-align: right;
+    width: 75px;
+}
+
+.view_event input[type="text"]{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0 0 8px;
+    width: 100px;
+}
+
+/* css for show_registered_events.php */
+.show_registered_event_list{
+	border: 1px solid blue;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 0;
+	
+}
+
+.show_registered_event_list th{
+	font-size: 12px;
+	text-transform: uppercase;
+	border-bottom: 1px solid black;
+	background-color: #ccc;
+	padding: 5px;
+	
+}
+
+.show_registered_event_list td{
+	font-size: 14px;
+	font-family: arial;
+}
+
+/* css for input text boxes, hover and focus */
+input[type="text"]:hover { background-color: gray; color: white;}
+input[type="text"]:focus { background-color: white; color: black;}
+
