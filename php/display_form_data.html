@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submitted form data</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse:collapse;
+        }
+
+        table, th, td {
+            border: 1px solid gray;
+        }
+
+        th {
+            background-color: black;
+            color:white;
+            text-align : left;
+        }
+
+        th, td {
+            padding: 4px;
+        }
+    </style>
+    <script type="text/javascript">
+					function displayData() {
+						var data_div = document.getElementById("data_div");
+						
+						// we'll use innerHTML to display the table so create the initial HTML string
+						var table_html = "<table><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody>";
+						
+						// window.location is the current URL
+						// window.location.search is what comes after the file name ie ?name1=value1&name2=value2&name3=value3
+						// get the data, excluding the question mark
+						var GET_data = window.location.search.substring(1);
+			
+						// spaces in URL data are represented by + signs so do a global replace using a regular expression
+						GET_data = GET_data.replace(/\+/g, ' ');
+			
+						// split the data into an array of name=value strings
+						var data_items = GET_data.split('&');
+						
+						for (var i = 0; i < data_items.length; i++) {
+								var item = data_items[i];
+								
+								// split into separate name and value
+								var name_value = item.split('=');
+								var name = name_value[0];
+								var value = name_value[1];
+								
+								// convert any special representations in the value (commas, newlines, ampersands etc) back to their character values
+								value = unescape(value);
+								
+								// replace any new line characters with HTML line breaks
+								value = value.replace(/\n/g, "<br />");
+				
+								// add the HTML for the table row to our HTML string
+								table_html += "<tr><td>" + name + "</td><td>" + value + "</td></tr>";		
+						}
+						// finish the table HTML
+						table_html += "</tbody></table>";
+						
+						data_div.innerHTML = table_html;
+					}
+    </script>
+  </head>
+  <body onload="displayData();">
+    <div id="data_div">
+    </div>
+  </body>
+</html>
